@@ -1,0 +1,51 @@
+.transcribe{
+  width: 500px;
+  margin: auto;
+  position: relative;
+  color: rgb(105, 97, 97);
+  height: 99lvh;
+}
+
+.transcribe header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex button{
+  background-color: rgb(102, 24, 176);
+  color: white ;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+  padding: 10px 25px;
+}
+.flex input{
+  flex: 5;
+  padding: 20px;
+  background-color: rgba(223, 212, 235, 0.528);
+  border-radius: 10px;
+
+}
+
+.transcribe h2{
+  text-align: ;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: .4px;
+  font-weight: 500;
+  color: rgba(85, 85, 85, 0.74);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.transcribe .trans {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
