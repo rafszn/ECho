@@ -1,16 +1,19 @@
 .speech{
-  width: 500px;
+  width: 100%;
   margin: auto;
+  padding: 0rem 2rem;
   position: relative;
   color: rgb(105, 97, 97);
-  height: 99lvh;
 }
 
 header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  height: 60px;
+}
+header img{
+  width: 80px;
 }
 
 .speech svg{
@@ -104,9 +107,11 @@ header h1{
 }
 
 footer{
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
+  margin: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .iconWrapper{
@@ -114,6 +119,38 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.iconWrapper p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.iconWrapper p svg{
+  font-size: 20px;
+}
+
+.iconWrapper img{
+  width: 40px;
+  justify-self: center;
+  align-self: center;
+}
+
+.iconWrapper h2{
+  font-size: 1.1rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.speech .upload  a{
+  margin-top: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 0.5rem;
 }
 
 select{
@@ -140,7 +177,10 @@ option{
 
 
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 850px) {
   /* some media queries */
+  .speech {
+    width: 650px;
+  }
 }
 

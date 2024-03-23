@@ -4,9 +4,8 @@ import {
   SettingsRounded, 
   SettingsVoiceRounded, 
   ContentCopyRounded, 
-  HomeRounded, 
-  RotateLeftRounded, 
-  PublishRounded
+  BackupRounded, 
+  CopyrightOutlined,
   } from '@mui/icons-material'
 import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
@@ -63,7 +62,7 @@ const Speech = () => {
       setText(transcript)
       // console.log(transcript)
 
-      const {data} = await axios.post('http://localhost:5000/speech/api', {
+      const {data} = await axios.post('http://localhost:5000/api/speech', {
         transcript,
         language
       })
@@ -103,8 +102,10 @@ const Speech = () => {
     >
 
       <header>
-        <ArrowLeftRounded/>
-        <h1><span className='speech'>Speech</span><span className='ify'>ify</span></h1>
+        <Link to='..'>
+          <ArrowLeftRounded/>
+        </Link>
+        <img src="LOGO 1.png" alt="" />
         <SettingsRounded/>
       </header>
 
@@ -164,16 +165,20 @@ const Speech = () => {
         </select>
       </div>
 
+     
+
+      <motion.div className='upload'
+      whileHover={{color:'rgb(21, 21, 94)', textDecoration:'underline'}}>
+        <Link to='/transcribe'>
+        <p>Upload Audio File</p>
+         <BackupRounded/>
+        </Link>
+      </motion.div>
+
+
       <footer>
         <div className="iconWrapper">
-          <HomeRounded/>
-          <RotateLeftRounded/>
-          <abbr title="Upload Audio file">
-            <Link to='/transcribe'>
-              <PublishRounded/>
-            </Link>
-            
-          </abbr>
+          <p><CopyrightOutlined/> <h2>e-cho</h2> <span>  2024 All rights reserved</span></p>
         </div>
       </footer>
       

@@ -1,15 +1,12 @@
 import './transcribe.css'
 import axios from 'axios'
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 import {motion } from 'framer-motion'
 import {
-  ArrowLeftRounded, 
-  SettingsRounded, 
-  SettingsVoiceRounded, 
   ContentCopyRounded, 
-  HomeRounded, 
-  RotateLeftRounded, 
-  PublishRounded
+  ArrowLeftRounded, 
+  CopyrightOutlined
   } from '@mui/icons-material'
 
 
@@ -35,7 +32,7 @@ const Transcribe = () => {
         setProgress(prev => {
          return {...prev, started:true}
         })
-        const response = await axios.post('http://localhost:5000/transcribe', formData, {
+        const response = await axios.post('http://localhost:5000/api/transcribe', formData, {
           onUploadProgress: (progressEvent)=>{ setProgress(prev => {
             return {...prev, pc: progressEvent.progress*100 }
           })},
@@ -61,7 +58,10 @@ const Transcribe = () => {
     animate={{x:0, opacity:1}}>
       
       <header>
-        <h1><span className='speech'>Speech</span><span className='ify'>ify</span></h1>
+       <Link to='/speech-to-text' end>
+          <ArrowLeftRounded/>
+        </Link>
+        <img src="LOGO 1.png" alt="" />
       </header>
 
 
@@ -91,16 +91,15 @@ const Transcribe = () => {
 
             <div className="textWrapper">
               <p> <span>Transcribed text:</span> {transcribedText} </p>
-              
-              <motion.button
-                whileTap={{scale:0.99, backgroundColor:'rgb(153, 80, 187)'}}
-                >
-                  <ContentCopyRounded/>
-                  Copy text
-              </motion.button>
             </div>
           </motion.div>)
         }
+
+        <footer>
+        <div className="iconWrapper">
+          <p><CopyrightOutlined/> <h2>e-cho</h2> <span>  2024 All rights reserved</span></p>
+        </div>
+      </footer>
       </div>
 
 

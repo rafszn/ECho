@@ -1,8 +1,7 @@
 .home{
   font-family: "Poppins", sans-serif;
-  width: 600px;
+  width: 100%;
   margin: auto;
-  height: 98vh;
   padding: 2rem 4rem;
 }
 a{
@@ -28,14 +27,17 @@ a{
   font-size: 3rem;
   letter-spacing: 1px;
   text-shadow: 1px 3px 2px black;
+  color: rgb(156, 152, 152);
 }
 
 .home .speech {
   color: rgb(156, 152, 152);
+  display: inline;
 }
 
 .home .ify {
   color: rgb(102, 24, 176);
+  display: inline;
 }
 
 .home p{
@@ -47,14 +49,32 @@ a{
 }
 
 .buttonWrapper{
-  width: 100%;
   margin: 2rem ;
   display: flex ;
   justify-content: center;
   align-items: center;
 }
 
+.textwrapper{
+  width: 100%;
+}
+.textwrapper p {
+  margin-top: -2rem;
+}
+
+.textwrapper img{
+  width: 40%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.textwrapper .img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .buttonWrapper button{
+  font-family: 'Rampart One', sans-serif;
   padding: 15px;
   width: 100%;
   border-radius: 5px;

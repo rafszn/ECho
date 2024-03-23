@@ -10,7 +10,10 @@ const Home = () => {
         </div>
 
         <div className='textwrapper' >
-          <h1><span className='speech'>Speech</span><span className='ify'>ify</span></h1>
+          <div className='img'>
+            <img src="LOGO 1.png" alt="" />
+
+          </div>
 
         
           <p>
@@ -20,7 +23,7 @@ const Home = () => {
           <div className="buttonWrapper">
               <button>
                 <Link to='speech-to-text'>
-                  Get Started
+                  START
                 </Link>
               </button>
             

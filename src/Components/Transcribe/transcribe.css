@@ -1,15 +1,16 @@
 .transcribe{
-  width: 500px;
+  width: 100%;
+  padding: 0rem 2rem;
   margin: auto;
   position: relative;
   color: rgb(105, 97, 97);
-  height: 99lvh;
 }
 
 .transcribe header{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 35%;
   padding: 1rem;
 }
 
@@ -48,4 +49,12 @@
 .transcribe .trans {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 850px) {
+  /* some media queries */
+  .transcribe {
+    width: 650px;
+  }
 }
