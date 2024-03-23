@@ -126,15 +126,15 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 .iconWrapper p svg{
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .iconWrapper h2{
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   justify-self: center;
   align-self: center;
 }
