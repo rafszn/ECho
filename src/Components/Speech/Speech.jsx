@@ -11,6 +11,7 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import { activeVoice } from '../../Utils/utils'
 import './speech.css'
+import { isChrome, isDesktop, isFirefox, isMobile } from 'react-device-detect'
 
 const Speech = () => {
   const [text, setText] = useState()
@@ -61,7 +62,7 @@ const Speech = () => {
       setText(transcript)
       // console.log(transcript)
 
-      const {data} = await axios.post('http://localhost:5000/api/speech', {
+      const {data} = await axios.post('https://echo-n.onrender.com/api/speech', {
         transcript,
         language
       })
@@ -160,13 +161,18 @@ const Speech = () => {
 
      
 
-      <motion.div className='upload'
+      {isDesktop && isChrome && <motion.div className='upload'
       whileHover={{color:'rgb(21, 21, 94)', textDecoration:'underline'}}>
         <Link to='/transcribe'>
         <p>Upload Audio File</p>
          <BackupRounded/>
         </Link>
-      </motion.div>
+      </motion.div>}
+
+      {isFirefox && <p className='hint'>Sorry, this App does not support <i>Firefox Browsers.</i></p>}
+
+      {!isChrome && <p className='hint'> For best experience, we recommend using <i>Desktop Chrome</i> to access all features.</p>}
+
 
 
       <footer>

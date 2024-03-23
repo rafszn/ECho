@@ -32,7 +32,7 @@ const Transcribe = () => {
         setProgress(prev => {
          return {...prev, started:true}
         })
-        const response = await axios.post('http://localhost:5000/api/transcribe', formData, {
+        const response = await axios.post('https://echo-n.onrender.com/api/transcribe', formData, {
           onUploadProgress: (progressEvent)=>{ setProgress(prev => {
             return {...prev, pc: progressEvent.progress*100 }
           })},
@@ -58,7 +58,7 @@ const Transcribe = () => {
     animate={{x:0, opacity:1}}>
       
       <header>
-       <Link to='/speech-to-text' end>
+       <Link to='/speech-to-text'>
           <ArrowLeftRounded/>
         </Link>
         <img src="LOGO 1.png" alt="" />

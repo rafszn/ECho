@@ -158,15 +158,21 @@ option{
   border: none;
 }
 
-.default{
+.default, .hint{
   font-size: 10px;
   color: grey;
   margin-bottom: 1rem;
 }
 
-.default i{
+.hint{
+  margin-top: 1rem;
+}
+
+.default i, .hint i{
   text-decoration: underline;
 }
+
+
 
 
 

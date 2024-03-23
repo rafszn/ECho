@@ -1,5 +1,6 @@
 import './home.css'
 import {Link} from 'react-router-dom'
+import { isChrome, isMobile } from 'react-device-detect'
 
 const Home = () => {
   return (
@@ -31,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         
-        <p className='important'>full functionality on <i>Desktop Chrome</i></p>
+        {!isChrome && <p className='important'>full functionality on <i>Desktop Chrome</i></p>}
 
       </div>
     </div>
