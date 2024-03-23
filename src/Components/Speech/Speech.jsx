@@ -148,7 +148,7 @@ const Speech = () => {
 
       <div className="languageWrapper">
         <select value={language} onChange={(e)=>setLanguage(e.target.value)}>
-          <option >please choose on option</option>
+          <option >please choose an option</option>
           {Languages.map((lang, id)=>{
             return (
               <option key={id}>
