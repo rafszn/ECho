@@ -3,7 +3,6 @@ import {
   ArrowLeftRounded, 
   SettingsRounded, 
   SettingsVoiceRounded, 
-  ContentCopyRounded, 
   BackupRounded, 
   CopyrightOutlined,
   } from '@mui/icons-material'
@@ -139,12 +138,6 @@ const Speech = () => {
                 </motion.p>)
               }
 
-            <motion.button
-              whileTap={{scale:0.99, backgroundColor:'rgb(153, 80, 187)'}}
-              >
-                <ContentCopyRounded/>
-                Copy text
-            </motion.button>
           </div>
         </motion.div>)
       }

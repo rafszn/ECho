@@ -126,21 +126,15 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .iconWrapper p svg{
-  font-size: 20px;
-}
-
-.iconWrapper img{
-  width: 40px;
-  justify-self: center;
-  align-self: center;
+  font-size: 15px;
 }
 
 .iconWrapper h2{
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   justify-self: center;
   align-self: center;
 }
@@ -182,5 +176,16 @@ option{
   .speech {
     width: 650px;
   }
+  .iconWrapper p{
+  font-size: 0.9rem;
+}
+
+.iconWrapper p svg{
+  font-size: 20px;
+}
+
+.iconWrapper h2{
+  font-size: 1.1rem;
+}
 }
 

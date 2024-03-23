@@ -51,10 +51,18 @@
   margin-bottom: 2rem;
 }
 
+.transcribe .iconWrapper h2{
+  font-size: 0.8rem;
+}
+
 
 @media screen and (min-width: 850px) {
   /* some media queries */
   .transcribe {
     width: 650px;
   }
+
+  .transcribe .iconWrapper h2{
+  font-size: 1.1rem;
+}
 }
