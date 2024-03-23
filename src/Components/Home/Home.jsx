@@ -26,9 +26,12 @@ const Home = () => {
                   START
                 </Link>
               </button>
+
             
           </div>
         </div>
+        
+        <p className='important'>full functionality on <i>Desktop Chrome</i></p>
 
       </div>
     </div>

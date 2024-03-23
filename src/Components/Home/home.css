@@ -73,6 +73,17 @@ a{
   align-items: center;
   justify-content: center;
 }
+
+.important{
+  font-size: .5rem;
+  text-align: left;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.important i {
+  text-decoration: underline;
+}
 .buttonWrapper button{
   font-family: 'Rampart One', sans-serif;
   padding: 15px;
