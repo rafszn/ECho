@@ -172,6 +172,14 @@ option{
   text-decoration: underline;
 }
 
+.speech .upload{
+  display: block;
+  transition: all .3s ease;
+}
+.speech .upload:hover{
+  color:rgb(21, 21, 94);
+  text-decoration: underline;
+}
 
 
 

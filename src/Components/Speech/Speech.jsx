@@ -23,14 +23,37 @@ const Speech = () => {
   // console.log(voices)
 
   const Languages=[
+    'Afrikaans',
+    'Albanian',
+    'Amharic',
+    'Basque',
+    'Bengali',
+    'Igbo',
+    'Hausa',
+    'Yoruba',
     'English',
+    'Chinese',
     'French',
-    'Spanish',
+    'Galician',
     'German',
-    'Portuguese',
-    'Korean',
+    'Hindi',
+    'Høgnorsk',
+    'Inuktitut',
+    'Irish',
     'Japanese',
-    'Chinese'
+    'Korean',
+    'Kurdish',
+    'Malay',
+    'Malagasy',
+    'Migmaq',
+    'Portuguese',
+    'Scottish Gaelic',
+    'Sami',
+    'Somali',
+    'Swahili',
+    'Spanish',
+    'Tigrinya',
+    'Zulu',
   ]
 
   const activeV = activeVoice(language, voices)
@@ -161,8 +184,7 @@ const Speech = () => {
 
      
 
-      {isDesktop && isChrome && <motion.div className='upload'
-      whileHover={{color:'rgb(21, 21, 94)', textDecoration:'underline'}}>
+      {isDesktop && isChrome && <motion.div className='upload'>
         <Link to='/transcribe'>
         <p>Upload Audio File</p>
          <BackupRounded/>
@@ -177,7 +199,7 @@ const Speech = () => {
 
       <footer>
         <div className="iconWrapper">
-          <p><CopyrightOutlined/> <h2>e-cho</h2> <span>  2024 All rights reserved</span></p>
+          <p><CopyrightOutlined/> <span>e-cho</span> <span>  2024 All rights reserved</span></p>
         </div>
       </footer>
       
