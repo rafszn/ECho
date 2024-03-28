@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import { activeVoice } from '../../Utils/utils'
 import './speech.css'
-import { isChrome, isDesktop, isFirefox, isMobile } from 'react-device-detect'
+import { isChrome, isDesktop, isFirefox } from 'react-device-detect'
 
 const Speech = () => {
   const [text, setText] = useState()
